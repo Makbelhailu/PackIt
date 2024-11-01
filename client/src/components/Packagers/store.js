@@ -5,7 +5,7 @@ const usePackageStore = create((set) => ({
   setPackageData: (data) => set({ packageData: data }),
   showPopup: false,
   setShowPopup: (value) => set({ showPopup: value }),
-  deleteItem: (packageIndex, itemId, budget) =>
+  deleteItem: (packageIndex, itemId) =>
     set((state) => {
       // Create a deep copy of the packages array
       const updatedPackages = [...state.packageData.packages];
@@ -19,9 +19,9 @@ const usePackageStore = create((set) => ({
         packageIndex
       ].items.reduce((acc, item) => acc + item.price, 0);
 
-      console.log(budget);
       updatedPackages[packageIndex].remaining_budget =
-        parseInt(budget) - parseInt(updatedPackages[packageIndex].total_price);
+        parseInt(state.packageData.budget) -
+        parseInt(updatedPackages[packageIndex].total_price);
 
       // Update state with the modified packages
       return {

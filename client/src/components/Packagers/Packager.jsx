@@ -161,13 +161,13 @@ const Packager = () => {
       <button className="Kgenerate-button" onClick={handleGeneratePackage}>
         PackIt
       </button>
-      <PackagePopup handleDelete={handleDelete} budget={budget} />
+      <PackagePopup handleDelete={handleDelete} />
     </div>
   );
 };
 
 // Popup component to show generated packages with inline Product Card
-const PackagePopup = ({ handleDelete, budget }) => {
+const PackagePopup = ({ handleDelete }) => {
   const { packageData, showPopup, setShowPopup } = usePackageStore();
 
   if (!showPopup || !packageData) return null;
@@ -212,9 +212,7 @@ const PackagePopup = ({ handleDelete, budget }) => {
                   <p className="Kproduct-style">Style: {item.style}</p>
                   <p className="Kproduct-price">${item.price}</p>
                   <div className="trashcan-icon">
-                    <FaTrashCan
-                      onClick={() => handleDelete(pIndex, item.id, budget)}
-                    />
+                    <FaTrashCan onClick={() => handleDelete(pIndex, item.id)} />
                   </div>
                 </div>
               ))}

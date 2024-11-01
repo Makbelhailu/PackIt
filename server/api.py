@@ -139,6 +139,7 @@ async def generate_packages(request: PackageRequest):
                         "quality": item.quality
                     } for item in package
                 ],
+                
                 "total_price": total_price,
                 "similarity_score": round(score, 2),
                 "remaining_budget": request.budget - total_price
@@ -147,7 +148,8 @@ async def generate_packages(request: PackageRequest):
         return {
             "status": "success",
             "packages": formatted_packages,
-            "total_packages": len(formatted_packages)
+            "total_packages": len(formatted_packages),
+            "budget": request.budget,
         }
 
     except Exception as e:
