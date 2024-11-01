@@ -1,0 +1,192 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+/* App.Kcss */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Tahoma, sans-serif;
+  background-color: #f4f4f4;
+}
+
+.Kcontainer {
+  width: 97%;
+  margin: 0px auto;
+  text-align: center;
+}
+
+.Kheader {
+  font-size: 2.1rem;
+  color: black;
+  margin-bottom: 40px;
+}
+
+.Kgrid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  margin-bottom: 30px;
+}
+
+.Kgrid-item {
+  background-color: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0K1);
+  text-align: left;
+}
+
+label {
+  font-weight: bold;
+  color: #0f3460;
+  display: block;
+  margin-bottom: 8px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.Kgenerate-button {
+  background-color: #0f3460;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0K3s;
+  margin-bottom: 10px;
+}
+
+.Kgenerate-button:hover {
+  background-color: #5e0e9b;
+}
+/* Popup css */
+/* Packager.css */
+.Kpopup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.Kpopup-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 800px;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.Kproduct-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.Kproduct-card {
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.Kproduct-image {
+  width: 100%;
+  height: auto;
+  max-height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.Kproduct-name {
+  font-size: 1.1em;
+  margin-top: 10px;
+}
+
+.Kproduct-style,
+.product-price {
+  font-size: 0.9em;
+  color: #555;
+}
+
+.Kadd-to-cart {
+  width: 100%;
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.Kclose-top-button {
+  position: absolute;
+  top: 10px; /* Adjust spacing as needed */
+  right: 15px; /* Adjust spacing as needed */
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #333;
+}
+
+.Kclose-top-button:hover {
+  color: #ff0000; /* Optional: hover effect for close button */
+}
+/* Styles for the bottom "Close" button */
+.Kpopup-content button {
+  background-color: #007bff; /* Blue background color */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px; /* Adds space above the button */
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+/* Hover effect for the bottom "Close" button */
+.Kpopup-content button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.trashcan-icon {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding-inline: 4px;
+  margin-top: 4px;
+}
+
+.trashcan-icon * {
+  color: red;
+  cursor: pointer;
+}

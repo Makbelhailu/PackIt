@@ -1,0 +1,88 @@
+.loginform {
+  min-height: 100vh;
+  width: 50%;
+  background-color: #f1efef;
+  margin: 50px auto;
+  border-radius: 10px;
+}
+
+.heading-login {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.container-login {
+  height: 100%;
+  padding: 40px;
+}
+
+.wrapper input {
+  font-size: 20px;
+  padding: 5px;
+  margin-left: 10px;
+  margin-top: 20px;
+  border-radius: 5px;
+  width: 300px;
+}
+
+.name {
+  padding-left: 25px;
+}
+
+.heading-login h1 {
+  font-size: 26px;
+}
+
+.heading-login p {
+  font-size: 18px;
+  padding-bottom: 30px;
+}
+
+.heading-login p span a {
+  color: blue;
+}
+.heading-login p span a:hover {
+  text-decoration: underline;
+}
+
+.form {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.submit-btn {
+  height: 50px;
+  width: 150px;
+  margin-top: 40px;
+  background-color: lightblue;
+  border-radius: 10px;
+  font-weight: 500;
+}
+
+.submit-btn:hover {
+  cursor: pointer;
+  background-color: grey;
+}
+
+.forgot-pass {
+  margin-top: 40px;
+}
+
+.forgot-pass span a {
+  color: blue;
+}
+
+.forgot-pass span a:hover {
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 534px) {
+  .loginform {
+    max-height: 60vh;
+    max-width: 100vw;
+  }
+}

@@ -1,0 +1,76 @@
+.chead {
+  display: flex;
+  gap: 2rem;
+}
+.shop-main {
+  width: 100%;
+}
+
+.shop .category {
+  padding: 1.5rem;
+}
+
+.chead h1 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.chead h1:nth-child(1) {
+  padding-left: 30px;
+}
+
+.chead h1:nth-child(2) {
+  opacity: 0.5;
+  border-left: 3px solid rgba(0, 0, 0, 0.5);
+  padding-left: 2rem;
+  margin-right: 1.5rem;
+}
+
+.shop .category .box {
+  background-color: #f6f9fc;
+  margin: 1rem 0;
+  transition: 0.5s;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+.shop .category img {
+  height: auto;
+  width: auto;
+}
+
+.shop .category .box:hover {
+  background-color: #fff;
+  box-shadow: rgb(43 52 69/10%) 0 4px 16px;
+  border-radius: 5px;
+}
+
+.shop .category .box2 {
+  margin-top: 100px;
+  text-align: center;
+}
+
+.shop .category button {
+  padding: 10px;
+  background: none;
+  text-align: center;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.shop .product img {
+  width: 100%;
+}
+
+.shop .product {
+  transition: 0.5s;
+  margin: 0;
+}
+
+.shop .product:hover {
+  box-shadow: rgb(43 52 69/10%) 0 4px 16px;
+}
+
+.box2 button {
+  cursor: pointer;
+}

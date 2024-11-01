@@ -1,0 +1,28 @@
+.banner-images {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-around;
+}
+
+.banner img {
+  width: 100%;
+  height: 100%;
+}
+
+.banner-img3 img {
+  width: 342px;
+}
+
+.banner:hover {
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1024px) {
+  .banner-images {
+    flex-direction: column;
+  }
+
+  .banner-img3 img {
+    width: 100%;
+  }
+}
