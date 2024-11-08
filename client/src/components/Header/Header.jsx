@@ -7,7 +7,7 @@ import "./Header.css";
 const Header = ({ cartItems }) => {
   return (
     <>
-      <Head />
+      {/* <Head /> */}
       <Search cartItems={cartItems} />
       <Navbar />
     </>
